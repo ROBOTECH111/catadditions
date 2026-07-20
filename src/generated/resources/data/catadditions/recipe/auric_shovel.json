@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "A": "catadditions:auric_shard",
     "S": "minecraft:stick"
