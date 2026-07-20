@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "catadditions:auric"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "catadditions:auric"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "catadditions:auric"
+      }
+    ]
+  }
+}

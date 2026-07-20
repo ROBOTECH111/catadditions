@@ -1,0 +1,48 @@
+package net.robotech.catadditions.block;
+
+import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.robotech.catadditions.CatAdditions;
+import net.robotech.catadditions.Item.ModItems;
+
+import java.util.function.Function;
+
+public class ModBlocks {
+    public static final DeferredRegister.Blocks BLOCKS =
+            DeferredRegister.createBlocks(CatAdditions.MODID);
+
+    public static final DeferredBlock<Block> AURIC_BLOCK = registerBlock("auric_block",
+            properties -> new Block(properties.strength(4f)
+                    .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> AURIC_ORE = registerBlock("auric_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(2, 4), properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> AURIC_DEEPSLATE_ORE = registerBlock("auric_deepslate_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(6, 7), properties.strength(4f)
+                    .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+
+
+    private  static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function) {
+        DeferredBlock<T> toReturn = BLOCKS.registerBlock(name, function);
+        registerBlockItem(name, toReturn);
+        return toReturn;
+    }
+
+    private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
+        ModItems.ITEMS.registerItem(name, (properties -> new BlockItem(block.get(), properties.useBlockDescriptionPrefix())));
+    }
+
+    public static void register(IEventBus eventBus) {
+        BLOCKS.register(eventBus);
+    }
+}

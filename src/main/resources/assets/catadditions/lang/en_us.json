@@ -1,0 +1,30 @@
+{
+  "item.catadditions.raw_auric": "Raw Auric",
+  "item.catadditions.auric_shard": "Auric Shard",
+
+  "item.catadditions.auric_sword": "Auric Sword",
+  "item.catadditions.auric_pickaxe": "Auric Pickaxe",
+  "item.catadditions.auric_axe": "Auric Axe",
+  "item.catadditions.auric_shovel": "Auric Shovel",
+  "item.catadditions.auric_hoe": "Auric Hoe",
+
+  "item.catadditions.auric_helmet": "Auric Helmet",
+  "item.catadditions.auric_chestplate": "Auric Chestplate",
+  "item.catadditions.auric_leggings": "Auric Leggings",
+  "item.catadditions.auric_boots": "Auric Boots",
+
+  "block.catadditions.auric_block": "Block of Auric",
+  "block.catadditions.auric_ore": "Auric Ore",
+  "block.catadditions.auric_deepslate_ore": "Auric Deepslate Ore",
+
+  "creativetab.catadditions.catadittions_tab" : "Cat Additions",
+
+
+  "catadditions.configuration.title": "Cat Additions Configs",
+  "catadditions.configuration.section.catadditions.common.toml": "Cat Additions Configs",
+  "catadditions.configuration.section.catadditions.common.toml.title": "Cat Additions Configs",
+  "catadditions.configuration.items": "Item List",
+  "catadditions.configuration.logDirtBlock": "Log Dirt Block",
+  "catadditions.configuration.magicNumberIntroduction": "Magic Number Text",
+  "catadditions.configuration.magicNumber": "Magic Number"
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_auric": {
+      "conditions": {
+        "items": [
+          {
+            "items": "catadditions:raw_auric"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "catadditions:auric_shard_from_smelting_raw_auric"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_auric"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "catadditions:auric_shard_from_smelting_raw_auric"
+    ]
+  }
+}

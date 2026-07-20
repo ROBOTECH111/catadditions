@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "auric",
+  "ingredient": "catadditions:auric_ore",
+  "result": {
+    "id": "catadditions:auric_shard"
+  }
+}

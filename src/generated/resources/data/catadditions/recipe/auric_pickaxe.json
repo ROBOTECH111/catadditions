@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "catadditions:auric_shard",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "AAA",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "id": "catadditions:auric_pickaxe"
+  }
+}

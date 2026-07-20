@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "catadditions:auric_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "catadditions:auric_shard"
+  }
+}
