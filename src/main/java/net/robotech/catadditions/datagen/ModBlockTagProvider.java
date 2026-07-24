@@ -20,13 +20,17 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.AURIC_ORE.getKey(),
-                        ModBlocks.AURIC_BLOCK.getKey(),
-                        ModBlocks.AURIC_DEEPSLATE_ORE.getKey());
+                .add(ModBlocks.AURIC_ORE.getKey())
+                .add(ModBlocks.AURIC_BLOCK.getKey())
+                .add(ModBlocks.AURIC_DEEPSLATE_ORE.getKey())
+                .add(ModBlocks.AURIC_NETHER_ORE.getKey())
+                .add(ModBlocks.AURIC_END_ORE.getKey());
 
-        tag(Tags.Blocks.NEEDS_NETHERITE_TOOL).add(ModBlocks.AURIC_ORE.getKey());
-
-        tag(Tags.Blocks.NEEDS_NETHERITE_TOOL).add(ModBlocks.AURIC_DEEPSLATE_ORE.getKey());
+        tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(ModBlocks.AURIC_ORE.getKey())
+                .add(ModBlocks.AURIC_DEEPSLATE_ORE.getKey())
+                .add(ModBlocks.AURIC_NETHER_ORE.getKey())
+                .add(ModBlocks.AURIC_END_ORE.getKey());
 
         tag(ModTags.Blocks.NEED_AURIC_TOOL)
                 .addTag(Tags.Blocks.NEEDS_NETHERITE_TOOL)

@@ -2,6 +2,8 @@
   "values": [
     "catadditions:auric_ore",
     "catadditions:auric_block",
-    "catadditions:auric_deepslate_ore"
+    "catadditions:auric_deepslate_ore",
+    "catadditions:auric_nether_ore",
+    "catadditions:auric_end_ore"
   ]
 }
